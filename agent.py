@@ -13,6 +13,7 @@ class Agent:
 		self.message_queue = Queue.Queue()
 
 	def send_message(self, receiver, content):
+		print  datetime.now().time(), self.name, receiver, content
 		self.ms.send(self.name, receiver, content, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
 	def receive(self, sender, content):

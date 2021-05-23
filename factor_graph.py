@@ -1,4 +1,4 @@
-from functions import Functions
+from functions1 import Functions
 import json
 
 class FactorGraph:

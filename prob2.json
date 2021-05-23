@@ -1,0 +1,32 @@
+{
+	"variables": [
+		{
+			"name": "x1",
+			"domain": {
+				"min": 0,
+				"max": 2,
+				"step": 1
+			}
+		},
+		{
+			"name": "x2",
+			"domain": {
+				"min": 0,
+				"max": 2,
+				"step": 1
+			}
+		}
+	],
+	"functions": [
+		{
+			"name": "f1",
+			"variables": ["x1", "x2"]
+		},
+		{
+			"name": "f2",
+			"variables": ["x1", "x2"]
+		}
+	],
+	"constraints": [],
+	"constants": []
+}

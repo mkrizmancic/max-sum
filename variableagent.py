@@ -21,8 +21,8 @@ class VariableAgent(Agent):
 	def read_r_messages(self):
 		while not self.message_queue.empty():
 			sender, r = self.message_queue.get()
-			for value in r:
-				self.r[sender][value] = r[value]
+			for value in r['content']:
+				self.r[sender][value] = r['content'][value]
 
 	def send_q_messages(self):
 		for f in self.neighbors:
